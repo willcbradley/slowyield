@@ -46,10 +46,19 @@ a:active {
     align-items: baseline;
     justify-content: space-between;
     color: black;
+    background-color: white; /* preserves visibility during sticky scroll */
 }
 
 .navlink {
     display: block;
+}
+
+.sticky {
+    position: sticky;
+}
+
+.topzero {
+    top: 0; /* anchors elements for sticky (such as nav) */
 }
 
 @media (max-width: 640px) {
