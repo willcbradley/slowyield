@@ -18,7 +18,13 @@ document.addEventListener("DOMContentLoaded", () => {
             overlay.classList.remove("show")
         })
         disagree.addEventListener(("click"), () => {
-            window.close()
-        })
-    }
-});
+            window.close();
+            if (!window.closed) {
+                if (history.length > 1) {
+                    history.back();
+            } else {
+                window.location.href = 'about:blank';
+            }
+        }
+    })
+}});
