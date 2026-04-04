@@ -28,6 +28,32 @@ a:active {
     text-decoration: underline;
 }
 
+.agree {
+    background-color: black;
+    color: white;
+}
+
+.agree:hover {
+    background-color: #679f69;
+    color: white;
+}
+
+.agree,
+.disagree {
+    border-radius: 3px;
+    padding-block: 1rem;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+}
+
+.agree:hover,
+.agree:active,
+.disagree:hover,
+.disagree:active {
+    text-decoration: none;
+    cursor: pointer;
+}
 .body {
     margin: 3rem auto 5rem;
     width: 90%;
@@ -38,8 +64,35 @@ a:active {
     margin-top: 2rem;
 }
 
+.disagree,
+.disagree:hover {
+    border: 1px solid black;
+    color: black;
+}
+
+.disclaimer {
+    border: 1px solid black;
+    padding: 1rem;
+    border-radius: 3px;
+    max-height: 60dvh;
+    overflow-y: scroll;
+}
+
+.disclaimer-buttons {
+    margin-top: 2rem;
+    gap: 1rem;
+    justify-content: space-around;
+}
+
 .flex {
     display: flex;
+}
+
+.modal {
+    background-color: white;
+    max-width: 540px;
+    padding: 2rem;
+    border-radius: 5px;
 }
 
 .nav {
@@ -51,6 +104,20 @@ a:active {
 
 .navlink {
     display: block;
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(6px);
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.overlay.show {
+    display: flex;
 }
 
 .sticky {
