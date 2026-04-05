@@ -84,8 +84,27 @@ a:active {
     justify-content: space-around;
 }
 
+.field {
+    margin-bottom: 2rem;
+}
+
+.field-heading {
+    text-decoration: none;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+}
+
 .flex {
     display: flex;
+}
+
+.link {
+    display: block;
+    margin-block: 0;
+    line-height: 1;
+    color: black;
+    cursor: pointer;
 }
 
 .modal {
