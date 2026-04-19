@@ -144,6 +144,11 @@ a:active {
     position: sticky;
 }
 
+.subtitle {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
 .topzero {
     top: 0; /* anchors elements for sticky (such as nav) */
 }
