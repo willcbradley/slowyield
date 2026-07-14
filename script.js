@@ -1,8 +1,3 @@
-// prevent FOUC
-window.addEventListener("load", () => {
-  document.documentElement.style.visibility = "visible";
-});
-
 // for live server convenience
 if (window.location.pathname.slice(-5) === ".html") {
     localStorage.setItem("agreed", true);

@@ -8,11 +8,6 @@
     line-height: 1.5;
 }
 
-/* prevent FOUC*/
-html {
-    visibility: hidden;
-  }
-
 a {
     color: #679f69;
     text-decoration: none;
