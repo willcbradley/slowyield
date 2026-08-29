@@ -36,7 +36,7 @@ const ideas = [
     "scope",
     "options",
     "intervention",
-    "scale.html",
+    "scale",
     "prestige",
     "strength",
     "time",
