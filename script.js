@@ -28,3 +28,36 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     })
 }});
+
+// ideanav
+
+const ideas = [
+    "start.html",
+    "scope",
+    "options",
+    "intervention.html",
+    "scale.html",
+    "prestige",
+    "strength",
+    "time",
+    "hope",
+    "frontiers",
+    "rent",
+    "adventure",
+    "next"
+]
+
+const current = location.pathname.slice(1)
+
+if (ideas.includes(current)) {
+
+    index = ideas.indexOf(current);
+
+    window.addEventListener("keydown", (e) => {
+        if (e.key === "ArrowRight" && index < ideas.length - 1) {
+            window.location.href = ideas[index + 1];
+        } if (e.key === "ArrowLeft" && index > 0) {
+            window.location.href = ideas[index - 1];
+        }
+    })
+}
