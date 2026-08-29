@@ -32,10 +32,10 @@ document.addEventListener("DOMContentLoaded", () => {
 // ideanav
 
 const ideas = [
-    "start.html",
+    "start",
     "scope",
     "options",
-    "intervention.html",
+    "intervention",
     "scale.html",
     "prestige",
     "strength",
