@@ -240,9 +240,3 @@ a:active {
 .topzero {
     top: 0; /* anchors elements for sticky (such as nav) */
 }
-
-@media (max-width: 640px) {
-    .body {
-        margin-top: 0.8rem;
-    }
-}
